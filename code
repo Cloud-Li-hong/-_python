@@ -1,0 +1,22 @@
+def turn(matrix):
+    r = len(matrix)
+    c = len(matrix[0])
+    B  = []
+    for i in range(c):
+        A = []
+        for j in range(r):
+            A.append(matrix[j][i])
+        B.append(A)
+    return B.revese()
+def printMatrix(matrix):
+    if matrix == []:
+        return 
+    result = []
+    while matrix:
+        result += matrix.pop(0)
+        if not matrx:
+            break
+        matrix = turn(matrix)
+     return matrix
+ a = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+ print(printMatrix(a))
